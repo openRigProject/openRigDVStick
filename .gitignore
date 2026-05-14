@@ -4,6 +4,7 @@
 *.kicad_prl
 *-backups/
 fp-info-cache
+.history/
 
 # macOS
 .DS_Store
