@@ -15,8 +15,9 @@ packet protocol.
 - **CP2102N USB bridge** — presents as `/dev/ttyUSBx` (Linux) or `COMx`
   (Windows); no custom driver needed on Linux/macOS
 - **Status LED** — activity indicator on USB data lines
-- **Compact dongle form factor** — exposed USB-C plug, fits a standard USB-A
-  adapter if needed
+- **Compact module form factor** — ~30 × 60 mm PCB with USB-C connector; the
+  AMBE-3000R LQFP-128 body (14×14mm) requires a wider board than a classic
+  USB stick
 
 ## Repository Layout
 

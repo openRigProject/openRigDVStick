@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "ambe3k") (type "KiCad") (uri "${KIPRJMOD}/libs/ambe3k/AMBE-Vocoder.kicad_sym") (options "") (descr "DVSI AMBE-3000R vocoder — sourced from github.com/m1geo/Quad-AMBE3000"))
+)

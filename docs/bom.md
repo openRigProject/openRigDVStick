@@ -5,7 +5,7 @@
 
 | Ref | Part | Value / PN | Package | Notes |
 |-----|------|-----------|---------|-------|
-| U1 | AMBE-3000R | AMBE-3000R | 48-LQFP | DVSI licensed AMBE+2/AMBE+2Pro/IMBE codec; UART 460800 baud; 3.3 V |
+| U1 | AMBE-3000R | AMBE-3000R | LQFP-128, 14×14mm, 0.4mm pitch | DVSI licensed AMBE+2/AMBE+2Pro/IMBE codec; UART 460800 baud; 3.3 V |
 | U2 | CP2102N-A02-GQFN24 | CP2102N | QFN-24 | USB 2.0 FS CDC bridge; no driver needed on Linux/macOS; VBUS detect; internal oscillator |
 | U3 | MIC5219-3.3YM5 | 3.3 V LDO | SOT-23-5 | 5 V VBUS in → 3.3 V out, 500 mA; powers U1 + U2 |
 | J1 | USB-C receptacle | USB4085-GF-A | USB-C 2.0 mid-mount | Bus power + data; CC resistors for USB 2.0 power negotiation |
@@ -23,4 +23,10 @@
   drop-in alternative if preferred.
 - **AMBE-3000R sourcing:** Available from DVSI directly or via authorised
   distributors. Confirm availability before committing PCB layout.
-- **PCB size target:** ~18 × 55 mm (USB stick form factor), 2-layer FR4.
+- **PCB size target:** ~30 × 60 mm, 2-layer FR4. The AMBE-3000R LQFP-128 body
+  is 14×14mm — too wide for a classic 18mm USB stick form factor. A small
+  module with a short USB-C cable or right-angle connector is the practical
+  approach.
+- **KiCad symbol:** `libs/ambe3k/AMBE-Vocoder.kicad_sym` — sourced from
+  [m1geo/Quad-AMBE3000](https://github.com/m1geo/Quad-AMBE3000), used under
+  its original licence.
