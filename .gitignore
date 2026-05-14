@@ -1,0 +1,12 @@
+# KiCad
+*.000
+*.bak
+*.kicad_prl
+*-backups/
+fp-info-cache
+
+# macOS
+.DS_Store
+
+# Fabrication outputs (generated, not committed)
+fabrication/*.zip
